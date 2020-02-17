@@ -9,13 +9,13 @@ const Pagination = props => {
     //Determines which menu item will be active
     if (i === currentPage) {
       pages.push(
-        <Menu.Item key={i} onClick={() => props.changePage(i)} active href="!#">
+        <Menu.Item key={i} onClick={() => props.changePage(i)} active>
           {i}
         </Menu.Item>
       );
     } else {
       pages.push(
-        <Menu.Item key={i} onClick={() => props.changePage(i)} href="!#">
+        <Menu.Item key={i} onClick={() => props.changePage(i)}>
           {i}
         </Menu.Item>
       );
